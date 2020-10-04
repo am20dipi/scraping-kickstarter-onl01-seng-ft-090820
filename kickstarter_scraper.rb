@@ -15,7 +15,7 @@ def create_project_hash
       :image_link => project.css("div.project-thumbnail a img").attribute("src").value,
       :description =>   ,
       :location =>  ,
-      :percent_funded =>
+      :percent_funded => project.css("ul.project-stats li.first.funded strong").text
       
     }
   end
