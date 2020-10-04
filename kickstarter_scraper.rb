@@ -2,6 +2,7 @@
 require 'nokogiri'
 
 def create_project_hash
-  html = {}
+  html = File.read('fixtures/kickstarter.html')
   
+  kickstarter = NokogirL(html)i::HTM
 end
